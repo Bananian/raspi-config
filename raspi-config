@@ -789,6 +789,14 @@ do_advanced_menu() {
   fi
 }
 
+#
+# warn Bananian Linux users not to use raspi-config
+#
+whiptail --title "Warning" --msgbox "'raspi-config' ist NOT the recommended configuration tool for Bananian Linux! Use 'bananian-config' instead.
+
+raspi-config may not work as expected or break your system.
+
+You have been warned!" 20 60 1
 
 #
 # Interactive use loop
